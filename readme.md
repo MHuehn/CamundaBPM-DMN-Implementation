@@ -15,4 +15,54 @@ Dabei wurde ein DRD als Basis für fünf wesentliche Decisions erstellt. Die **I
 
 ![alt text](https://github.com/MCikus/CamundaBPM-DMN-Implementation/blob/master/pictures/DMN.png?raw=true "DMN")
 
-## 
+## DMN Tabellen
+
+| Beraterpreis |  |  |  |  |  |
+|--------------|---------------|---------|-------------|--------|------------|
+| preisID |  |  |  |  |  |
+| U | Input |  |  | Output | Annotation |
+|  | Berateranzahl | Stunden | Ausgelastet | Preis |  |
+|  | integer | integer | boolean | double |  |
+| 1 | 1 | 5 | false | 50.00 | - |
+| 2 | 2 | 5 | false | 52.00 | - |
+| 3 | 3 | 5 | false | 54.00 | - |
+| 4 | 4 | 5 | false | 56.00 | - |
+| 5 | 5 | 5 | false | 58.00 | - |
+| 6 | 6 | 5 | false | 60.00 | - |
+| 7 | 7 | 5 | false | 62.00 | - |
+| 8 | 1 | 10 | false | 49.00 | - |
+| 9 | 2 | 10 | false | 51.00 | - |
+| 10 | 3 | 10 | false | 53.00 | - |
+| 11 | 4 | 10 | false | 55.00 | - |
+| 12 | 5 | 10 | false | 57.00 | - |
+| 13 | 6 | 10 | false | 59.00 | - |
+| 14 | 7 | 10 | false | 61.00 | - |
+| 15 | 1 | 15 | false | 48.00 | - |
+| 16 | 2 | 15 | false | 50.00 | - |
+| 17 | 3 | 15 | false | 52.00 | - |
+| 18 | 4 | 15 | false | 54.00 | - |
+| 19 | 5 | 15 | false | 56.00 | - |
+| 20 | 6 | 15 | false | 58.00 | - |
+| 21 | 7 | 15 | false | 60.00 | - |
+| 22 | 1 | 20 | false | 47.00 | - |
+| 23 | 2 | 20 | false | 49.00 | - |
+| 24 | 3 | 20 | false | 51.00 | - |
+| 25 | 4 | 20 | false | 53.00 | - |
+| 26 | 5 | 20 | false | 55.00 | - |
+| 27 | 6 | 20 | false | 57.00 | - |
+| 28 | 7 | 20 | false | 59.00 | - |
+| 29 | 1 | 25 | false | 46.00 | - |
+| 30 | 2 | 25 | false | 48.00 | - |
+| 31 | 3 | 25 | false | 50.00 | - |
+| 32 | 4 | 25 | false | 52.00 | - |
+| 33 | 5 | 25 | false | 54.00 | - |
+| 34 | 6 | 25 | false | 56.00 | - |
+| 35 | 7 | 25 | false | 58.00 | - |
+| 36 | 1 | 30 | false | 45.00 | - |
+| 37 | 2 | 30 | false | 47.00 | - |
+| 38 | 3 | 30 | false | 49.00 | - |
+| 39 | 4 | 30 | false | 51.00 | - |
+| 40 | 5 | 30 | false | 53.00 | - |
+| 41 | 6 | 30 | false | 55.00 | - |
+| 42 | 7 | 30 | false | 57.00 | - |
+| 43 | - | - | true | 80.00 | - |
