@@ -116,6 +116,35 @@ In dieser Literal Expression werden die erzeugten Ausgabewerte innerhalb der DMN
 
 ### Ausgabewerte
 
-In dieser Literal Expression wird ein Array erstellt, welche dazu dient alle Ausgabewerte innerhalb der DMN Engine in der BPMN Implementierung verfügbar zu machen. Es ist wichtig hierbei Groovy als Expression Language auszuwählen. 
+In dieser Literal Expression wird ein Array erstellt, welche dazu dient alle Ausgabewerte innerhalb der DMN Engine in der BPMN Implementierung verfügbar zu machen. Es ist wichtig hierbei Groovy als Expression Language auszuwählen. Das DRD schließt durch diese Literal Expression mit nur mit der Variable `infoList` und trägt durch `infoList.addAll(tableVar)` alle benötigten Informationen. DMN und BPMN sind in der Camunda BPM Engine durch eine lose Kopplung sehr unabhängig voneinander. Mehr dazu im Abschnitt der folgenden BPMN Implementierung.
 
 ![alt text](https://github.com/MCikus/CamundaBPM-DMN-Implementation/blob/master/pictures/InformationsListe.PNG?raw=true "LiteralExpression2")
+
+## BPMN Implementierung und Konfigurationen
+
+Dieser Prozess ist auf das nötigste beschränkt und nur zur Eingabe von Daten innerhalb eines Formulars bzw. zur Überprüfung der Ausgabewerte, sowie zur Implementierung einer DMN Task erstellt worden. 
+
+![alt text](https://github.com/MCikus/CamundaBPM-DMN-Implementation/blob/master/pictures/BPMN.png?raw=true "BPMN Prozess")
+
+### Formular ausfüllen
+
+Es ist wichtig das die Eingabewerte die **selbe ID und den selben Datentyp** tragen wie auch die Eingabewerte der DMN Tabellen. 
+
+### Entscheidung finden
+
+In der Decision Task wird unter dem Tab `General - Details` folgende Konfiguration vorgenommen.
+
+1 Implementation -> DMN
+
+2 Decision Ref -> InformationslisteID 
+* gewünschte Ausgabe einer Decision des DRD durch die literal Expression ID oder Tabellen ID
+
+3 Binding -> latest
+
+4 Result Variable -> infoList
+* Ausgabevariable der literal Expression, welche innerhalb der BPMN Engine verarbeitet werden soll (daher ein Array)
+
+5 Map Decision Result -> singleEntry
+
+
+
