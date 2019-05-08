@@ -17,6 +17,41 @@ Dabei wurde ein DRD als Basis für fünf wesentliche Decisions erstellt. Die **I
 
 ## DMN Tabellen
 
+In diesem Abschnitt werden die DMN Tabellen kurz erläutert und vorgestellt. 
+
+### Anzahl der Berater
+
+| Notwendige Berater |  |  |  |
+|--------------------|----------------|---------------|------------|
+| berateranzahlID |  |  |  |
+| C+ | Input | Output | Annotation |
+|  | Themenvielfalt | Berateranzahl |  |
+|  | integer | double |  |
+| 1 | >= 1 | 1 | - |
+| 2 | >= 2 | 1 | - |
+| 3 | >= 3 | 1 | - |
+| 4 | >= 4 | 1 | - |
+| 5 | >= 5 | 1 | - |
+| 6 | >= 6 | 1 | - |
+| 7 | >= 7 | 1 | - |
+
+### Stunden
+
+| Benötigte Stunden |  |  |  |  |  |
+|-------------------|--------------|----------------------------------------|------------|---------|------------|
+| stundenID |  |  |  |  |  |
+| U | Input |  |  | Output | Annotation |
+|  | Komplexitaet | Deadline | Entfernung | Stunden |  |
+|  | string | date | integer | double |  |
+| 1 | "hoch" | < date and time("2019-08-04T00:00:00") | < 100 | 20 |  |
+| 2 | "hoch" | > date and time("2019-08-03T00:00:00") | < 100 | 15 |  |
+| 3 | "hoch" | < date and time("2019-08-04T00:00:00") | >= 100 | 30 |  |
+| 4 | "hoch" | > date and time("2019-08-03T00:00:00") | >= 100 | 25 |  |
+| 5 | "mittel" | - | - | 10 |  |
+| 6 | "niedrig" | - | - | 5 |  |
+
+### Beraterpreis 
+
 | Beraterpreis |  |  |  |  |  |
 |--------------|---------------|---------|-------------|--------|------------|
 | preisID |  |  |  |  |  |
