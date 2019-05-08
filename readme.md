@@ -150,12 +150,17 @@ In der Decision Task wird unter dem Tab `General - Details` folgende Konfigurati
 
 In der Decision Task wird unter dem Tab `Listeners` folgende Konfiguration vorgenommen.
 
-1 Execution Listener auf das **+** klicken.
-2 Event Type auf **start** setzen.
-3 Listener Type auf **Script** setzen.
-4 Script Format **Javascript** eingeben.
-5 Script Type auf **Inline Script** setzen.
-6 Innerhalb des Textfeldes Script folgenden Code einsetzen.
+1 Execution Listener auf das **+** klicken
+
+2 Event Type auf **start** setzen
+
+3 Listener Type auf **Script** setzen
+
+4 Script Format **Javascript** eingeben
+
+5 Script Type auf **Inline Script** setzen
+
+6 Innerhalb des Textfeldes Script folgenden Code einsetzen
 
 ```javascript
 execution.setVariable("stunden", infoList[0]);
@@ -164,6 +169,6 @@ execution.setVariable("preis", infoList[2]);
 execution.setVariable("gesamtPreis", infoList[3]);
 ```
 
-**Erklärung**
+**Erklärung:**
 Hiermit werden die einzelnen Werte aus der Position des Arrays geholt und in die Formularfelder eingesetzt, welche die selbe ID tragen müssen.  
 
