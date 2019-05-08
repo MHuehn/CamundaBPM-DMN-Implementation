@@ -21,6 +21,8 @@ In diesem Abschnitt werden die DMN Tabellen kurz erläutert und vorgestellt.
 
 ### Anzahl der Berater
 
+In dieser Tabelle wird die Anzahl der benötigten Berater festgelegt. Diese Ergibt sich allein aus der zu bearbeiten Themenvielfalt. Für jedes neue zu bearbeitene Thema für einen Kunden wird ein Berater dazu gezogen. Bsp. IT, Logistik und Controlling ergeben 3 Themengebiete - also drei Berater, jedoch nicht mehr als sieben Berater. 
+
 | Notwendige Berater |  |  |  |
 |--------------------|----------------|---------------|------------|
 | berateranzahlID |  |  |  |
@@ -37,6 +39,8 @@ In diesem Abschnitt werden die DMN Tabellen kurz erläutert und vorgestellt.
 
 ### Stunden
 
+In dieser Tabelle werden die Stunden kalkuliert, welche sich je nach Komplexität, Deadline des Projektes und der Entfernung zum Kunden ergeben. Bei einer mittleren oder niedrigen Komplexität wird davon ausgegangen den Kunden auch Remote zu bedienen, was in der theorie Zeit einspart und sich direkt auf die Entscheidung auswirkt. 
+
 | Benötigte Stunden |  |  |  |  |  |
 |-------------------|--------------|----------------------------------------|------------|---------|------------|
 | stundenID |  |  |  |  |  |
@@ -51,6 +55,8 @@ In diesem Abschnitt werden die DMN Tabellen kurz erläutert und vorgestellt.
 | 6 | "niedrig" | - | - | 5 |  |
 
 ### Beraterpreis 
+
+In dieser Tabelle werden die Stundenpreise festgelegt die ein Berater für einen Kunden kostet. Je mehr Berater und Stunden desto geringer fällt der Stundenpreis aus. Die Auslastung des fiktiven Unternehmens wirkt sich dahingehend aus, dass bei einer hohen Auslastung ein Standardpreis von 80,00 EUR veranschlagt wird. Dabei spielt die Anzahl der Berater und die Stundenanzahl keine Rolle.
 
 | Beraterpreis |  |  |  |  |  |
 |--------------|---------------|---------|-------------|--------|------------|
@@ -101,3 +107,15 @@ In diesem Abschnitt werden die DMN Tabellen kurz erläutert und vorgestellt.
 | 41 | 6 | 30 | false | 55.00 | - |
 | 42 | 7 | 30 | false | 57.00 | - |
 | 43 | - | - | true | 80.00 | - |
+
+### Gesamtpreis 
+
+In dieser Literal Expression werden die erzeugten Ausgabewerte innerhalb der DMN Engine ausmultipliziert und es ergibt sich der Gesamtpreis aus den Stunden, der Berateranzahl und des kalkulierten Stundenpreises. Die Literal Expression umgeht eine zu große und unübersichtliche Tabelle.
+
+![alt text](https://github.com/MCikus/CamundaBPM-DMN-Implementation/blob/master/pictures/gesamtPreis.png?raw=true "LiteralExpression1")
+
+### Ausgabewerte
+
+In dieser Literal Expression wird ein Array erstellt, welche dazu dient alle Ausgabewerte innerhalb der DMN Engine in der BPMN Implementierung verfügbar zu machen. Es ist wichtig hierbei Groovy als Expression Language auszuwählen. 
+
+![alt text](https://github.com/MCikus/CamundaBPM-DMN-Implementation/blob/master/pictures/InformationsListe.PNG?raw=true "LiteralExpression2")
