@@ -176,6 +176,12 @@ Hiermit werden die einzelnen Werte aus der Position des Arrays geholt und in die
 
 ## Testkonzept
 
-Im folgendem Testkonzept werden alle möglichen Ausgabewerten der Decision **Gesamt** tabellarisch aufgeführt.
+Vor der eigentlichen Implementierung wurde das DRD und seine Decisions im DMN Simulator getestet. Zu diesem Zeitpunkt waren noch keine literal Expressions angelegt. Im Simulator gab es keine Aufälligkeiten. Als die literal Expressions hinzugefügt worden sind, war der DMN Simulator nicht mehr in der Lage die Ausgabewerte der literal Expressions anzuzeigen. Das liegt daran das der Simulator zu diesem Zeitpunkt (09.05.2019) keine Expression Languages wie Groovy unterstützt. In Camunda BPM funktioniert die Implementierung allerdings reibungslos. 
 
-[Ausgabewerte](https://github.com/MCikus/CamundaBPM-DMN-Implementation/blob/master/testconcept/Test-Szenario-Tabelle.csv)
+Im folgendem Testkonzept werden alle möglichen konstellationen mit Ausgabewerten tabellarisch aufgeführt.
+
+[Hier zum Testkonzept](https://github.com/MCikus/CamundaBPM-DMN-Implementation/tree/master/testconcept)
+
+Besondere Aufmerksamkeit bekamen hierbei die Szenarien, in welcher der boolean zur Auslastung auf true durchgespielt wurde, sowie die Varianten der Komplexität auf niedrig und mittel.
+
+Die Tabelle ergab in jedem Testfall eine 100% Übereinstimmung mit den Ausgabewerten in Camunda BPM.
