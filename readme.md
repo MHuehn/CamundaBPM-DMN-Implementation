@@ -17,11 +17,11 @@ Dabei wurde ein DRD als Basis für fünf wesentliche Decisions erstellt. Die **I
 
 **Fall:** 
 
-**Geschäftsziel der Entscheidung:** Die Berateranzahl, Arbeitsstunden und der Preis für Kundenprojekte werden anhand von Eingabeparametern automatisiert Entschieden und zum Schluss ausmultipliziert um einen Gesamtpreis zu erhalten. Dabei werden die Gesamtpreise für Projektanfragen sofort kalkuliert. Dieses Vorgehen erleichtert die Entscheidung, minimiert das Fehlerrisiko und beschleunigt die Angebotserstellung.
+**Geschäftsziel der Entscheidung:** Die Berateranzahl, die benötigten Stunden und der Preis für Kundenprojekte werden anhand von Eingabeparametern automatisiert entschieden und zum Schluss ausmultipliziert, um einen Gesamtpreis für Projekte zu erhalten. Dabei werden die Gesamtpreise für Projektanfragen sofort kalkuliert. Dieses Vorgehen erleichtert die Entscheidung, minimiert das Fehlerrisiko und beschleunigt die Angebotserstellung.
 
 **Wer führt die Entscheidung aus:** Account Manager
 
-**In welchen Prozess ist die Entscheidung eingebunden:** Die Entscheidung ist in dem Prozess der Kundenakquise und Angebotserstellung. Der Vertrieb mit diesem Tool in der Lage sehr schnell die Frage nach einem Preis zu beantworten.
+**In welchen Prozess ist die Entscheidung eingebunden:** Die Entscheidung tritt in dem Prozess der Kundenakquise und Angebotserstellung auf. Der Vertrieb mit diesem Tool in der Lage sehr schnell die Frage nach einem Preis zu beantworten.
 
 ## DMN Tabellen
 
