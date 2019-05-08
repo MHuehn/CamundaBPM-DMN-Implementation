@@ -15,6 +15,14 @@ Dabei wurde ein DRD als Basis für fünf wesentliche Decisions erstellt. Die **I
 
 ![alt text](https://github.com/MCikus/CamundaBPM-DMN-Implementation/blob/master/pictures/DMN.png?raw=true "DMN")
 
+**Fall:** 
+
+**Geschäftsziel der Entscheidung:** Die Berateranzahl, Arbeitsstunden und der Preis für Kundenprojekte werden anhand von Eingabeparametern automatisiert Entschieden und zum Schluss ausmultipliziert um einen Gesamtpreis zu erhalten. Dabei werden die Gesamtpreise für Projektanfragen sofort kalkuliert. Dieses Vorgehen erleichtert die Entscheidung, minimiert das Fehlerrisiko und beschleunigt die Angebotserstellung.
+
+**Wer führt die Entscheidung aus:** Account Manager
+
+**In welchen Prozess ist die Entscheidung eingebunden:** Die Entscheidung ist in dem Prozess der Kundenakquise und Angebotserstellung. Der Vertrieb mit diesem Tool in der Lage sehr schnell die Frage nach einem Preis zu beantworten.
+
 ## DMN Tabellen
 
 In diesem Abschnitt werden die DMN Tabellen kurz erläutert und vorgestellt. 
